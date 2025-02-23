@@ -6,6 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1fd2f7029250163499dd826a5f7d2282
+  - enabled: 1
+    path: Assets/Scenes/CutsceneLeahStealsDebra.unity
+    guid: 744b9227350fb954489883655bc71acf
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 33f9ec042771af749abe014d33888f1a
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

@@ -1,29 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameBehaviour : MonoBehaviour
 {
+    public void UpdateScene(string updatedText)
+    {
+        ProgressText.text = updatedText; 
+        Time.timeScale = 0f;
+    }
     public bool showWinScreen = false;
     public string labelText  = "Collect all 4 items and win your freedom!";
     public int maxItems =4;
+    public Button LossButton;
+
+    public Text HealthText; 
+    public Text ProgressText;
+    public Text ItemText;
+    public Button WinButton; 
+
+
     private int _itemsCollected =0;
     public int Items
     {
         get { return _itemsCollected; }
-        set {
+        set 
+        {
                 _itemsCollected = value;
+                ItemText.text = "Items Collected: " +Items;
                 if (_itemsCollected>= maxItems)
                 {
-                    labelText = "You've found all the items!";
-                    showWinScreen = true;
-                    Time.timeScale =0f;
+                  WinButton.gameObject.SetActive(true);
+                  UpdateScene("You've found all the items!");
                 }
             else
             {
-                labelText = "Item Found, only " + (maxItems - _itemsCollected) +" more to go!";
-
+                ProgressText.text = "Item Found, only " + (maxItems - _itemsCollected) +" more to go!";
             }
         }
     }
@@ -33,6 +48,18 @@ public class GameBehaviour : MonoBehaviour
         get{ return _playerHP; }
         set{
             _playerHP = value;
+                HealthText.text = "Player Health:" +HP ;
+
+            if(_playerHP <=0)
+            {
+                LossButton.gameObject.SetActive(true);
+                UpdateScene("You want another life with that?");
+            }
+            else
+            {
+                ProgressText.text = "Ouch... that;s got to hurt. "; 
+            }
+
             Debug.LogFormat("Lives: {0}", _playerHP);
         }
     }

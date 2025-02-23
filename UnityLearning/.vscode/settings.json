@@ -53,6 +53,7 @@
     },
     "dotnet.defaultSolution": "UnityLearning.sln",
     "cSpell.words": [
+        "Behaviour",
         "Rigidbody"
     ]
 }

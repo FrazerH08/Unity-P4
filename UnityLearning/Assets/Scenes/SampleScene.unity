@@ -535,9 +535,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a970c6397ae7b745a7162970731c634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showWinScreen: 0
+  showWinScreen: 1
   labelText: Collect all 4 items and win your freedom!
   maxItems: 1
+  LossButton: {fileID: 0}
+  HealthText: {fileID: 0}
+  ProgressText: {fileID: 0}
 --- !u!4 &355713539
 Transform:
   m_ObjectHideFlags: 0
@@ -827,7 +830,6 @@ GameObject:
   - component: {fileID: 650524885}
   - component: {fileID: 650524884}
   - component: {fileID: 650524886}
-  - component: {fileID: 650524887}
   - component: {fileID: 650524888}
   m_Layer: 3
   m_Name: Player
@@ -922,27 +924,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &650524887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650524882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776375e149af90e4aa8026080cbd4cb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  rotateSpeed: 75
-  jumpVelocity: 5
-  distanceToGround: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  bullet: {fileID: 0}
-  bulletSpeed: 100
 --- !u!136 &650524888
 CapsuleCollider:
   m_ObjectHideFlags: 0

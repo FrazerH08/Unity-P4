@@ -18,11 +18,13 @@ public class PlayerBehaviour : MonoBehaviour
 
         private  Rigidbody _rb;
         private CapsuleCollider _col;
+        private GameBehaviour  _gameManager;
 
         void Start()
         {
             _rb = GetComponent<Rigidbody> ();
             _col = GetComponent<CapsuleCollider>();
+            _gameManager = GameObject.Find("Game Manager"). GetComponent<GameBehaviour>();
         }
 
     // Update is called once per frame
@@ -58,5 +60,12 @@ public class PlayerBehaviour : MonoBehaviour
         Vector3 capsuleBottom = new Vector3(_col.bounds.center.x,_col.bounds.min.y, _col.bounds.center.z);
         bool grounded = Physics.CheckCapsule(_col.bounds.center,capsuleBottom, distanceToGround, groundLayer, QueryTriggerInteraction.Ignore);
         return grounded;
+    }
+    void  OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Enemy")
+        {
+            _gameManager.HP -=1;
+        }
     }
 }
