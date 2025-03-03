@@ -4,24 +4,36 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    // set the camera offset values as properties for the editor
-    public Vector3 camOffset = new Vector3(1f,1f,-3f);
-    //set the target as the Player's Transform property - to access it's location
+    // Set the camera offset values as properties for the editor
+    public Vector3 camOffset = new Vector3(0f, 2f, -5f); // Adjust the offset as needed
+    // Set the target as the Player's Transform property - to access its location
     private Transform target;
+
+    // Smoothing factor for the camera follow
+    public float smoothSpeed = 0.125f;
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.Find("Player").transform;
-        Debug.Log(target.position);
+        Debug.Log("Player position: " + target.position);
     }
 
-    // Update is called once per frame
-    // LastUpdate is called after update
-    // we use LateUpdate to ensure the player has moved before the camera 
+    // LateUpdate is called after Update, used to ensure the camera follows after the player moves
     void LateUpdate()
     {
-        this.transform.position = target.TransformPoint(camOffset);
-        this.transform.LookAt(target);
-        Debug.Log(this.transform.position);
+        // Calculate the desired position with the offset
+        Vector3 desiredPosition = target.position + camOffset;
+
+        // Smoothly move the camera toward the desired position
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+
+        // Set the camera position to the smoothed position
+        transform.position = smoothedPosition;
+
+        // Make the camera look at the player
+        transform.LookAt(target);
+
+        Debug.Log("Camera position: " + transform.position);
     }
 }

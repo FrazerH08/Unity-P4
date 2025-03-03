@@ -39,6 +39,15 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.feature.cinematic@1.0.0": {
+      "name": "com.unity.feature.cinematic",
+      "displayName": "Cinematic Studio",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.feature.cinematic@fc889d74163d",
+      "fingerprint": "fc889d74163d413b4cb0022aad7feaef281e4acd",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.ide.rider@3.0.31": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
@@ -441,6 +450,56 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.sequences@2.1.3": {
+      "name": "com.unity.sequences",
+      "displayName": "Sequences",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.sequences@f969dac3a2cb",
+      "fingerprint": "f969dac3a2cb5363dec197f50b6b8f930dda02c4",
+      "editorCompatibility": "2022.1.0a1",
+      "version": "2.1.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.formats.fbx@5.1.1": {
+      "name": "com.unity.formats.fbx",
+      "displayName": "FBX Exporter",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.formats.fbx@4ad3eb16b616",
+      "fingerprint": "4ad3eb16b6169d696abf31e81f575752527d445e",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "5.1.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.formats.alembic@2.4.0": {
+      "name": "com.unity.formats.alembic",
+      "displayName": "Alembic",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.formats.alembic@9d89ad59ac86",
+      "fingerprint": "9d89ad59ac867821b74ba85f6a2a7b7f20e49e1b",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.4.0",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.cinemachine@2.10.3": {
+      "name": "com.unity.cinemachine",
+      "displayName": "Cinemachine",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.cinemachine@dcc61ebd6655",
+      "fingerprint": "dcc61ebd6655e32f2b7f8ebca32ca02be455e2d9",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.10.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.recorder@5.1.2": {
+      "name": "com.unity.recorder",
+      "displayName": "Recorder",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.recorder@979a3db2a781",
+      "fingerprint": "979a3db2a7818d9c4852c886631b01e394d80af0",
+      "editorCompatibility": "2023.1.1f1",
+      "version": "5.1.2",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.searcher@4.9.2": {
       "name": "com.unity.searcher",
       "displayName": "Searcher",
@@ -489,6 +548,36 @@
       "editorCompatibility": "2023.3.0b1",
       "version": "1.0.1",
       "source": "builtin",
+      "testable": false
+    },
+    "com.unity.bindings.openimageio@1.0.0": {
+      "name": "com.unity.bindings.openimageio",
+      "displayName": "OpenImageIO Bindings",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.bindings.openimageio@3229d2aa5c76",
+      "fingerprint": "3229d2aa5c76c70269dc58c79d5864ec84fa4a74",
+      "editorCompatibility": "2023.1.0a1",
+      "version": "1.0.0",
+      "source": "registry",
+      "testable": false
+    },
+    "com.autodesk.fbx@5.1.1": {
+      "name": "com.autodesk.fbx",
+      "displayName": "Autodesk FBX SDK for Unity",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.autodesk.fbx@5797ff6b31c7",
+      "fingerprint": "5797ff6b31c7c66189bffe1adc9cbf0ad5a9cbbf",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "5.1.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.settings-manager@2.0.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "C:\\Unity-P4\\UnityLearning\\Library\\PackageCache\\com.unity.settings-manager@56a930affa1e",
+      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "2.0.1",
+      "source": "registry",
       "testable": false
     },
     "com.unity.nuget.mono-cecil@1.11.4": {
