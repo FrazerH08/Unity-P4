@@ -464,6 +464,8 @@
 "Assets/Scripts/OpeningCutscene/KeyDebug.cs"
 "Assets/Scripts/OpeningCutscene/SimpleTest.cs"
 "Assets/Scripts/PlayerBehaviour.cs"
+"Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/ThirdPersonCam.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
