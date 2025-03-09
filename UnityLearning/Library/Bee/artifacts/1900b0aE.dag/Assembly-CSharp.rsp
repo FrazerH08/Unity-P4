@@ -459,6 +459,7 @@
 "Assets/Scripts/GameBehaviour.cs"
 "Assets/Scripts/ItemBehaviour.cs"
 "Assets/Scripts/MainMenu/MainMenu.cs"
+"Assets/Scripts/nerdgun.cs"
 "Assets/Scripts/OpeningCutscene/ConversationStarter.cs"
 "Assets/Scripts/OpeningCutscene/InputDebug.cs"
 "Assets/Scripts/OpeningCutscene/KeyDebug.cs"
