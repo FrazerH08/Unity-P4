@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+    public GameObject bullet;
+    public float bulletSpeed = 100f;
 
     private void Start()
     {
@@ -49,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else{
             rb.linearDamping = 0;
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            FireBullet();
         }
     } 
 
@@ -102,5 +108,12 @@ public class PlayerMovement : MonoBehaviour
     private void  ResetJump()
     {
         readyToJump = true;
+    }
+
+        private void FireBullet()
+    {
+        GameObject newBullet = Instantiate(bullet, this.transform.position + new Vector3(1, 0, 0), this.transform.rotation);
+        Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
+        bulletRB.linearVelocity = this.transform.forward * bulletSpeed;  // Use velocity instead of linearVelocity
     }
 }
